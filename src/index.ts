@@ -112,10 +112,10 @@ jQuery.when(window.mw.loader.using('mediawiki.util'), $.ready).then((): void => 
   const extensionID = 'rowewilsonfrederiskholme.wikitext';
   const actionPath = '/PullPage';
   const args: Record<string, string> = {
-    RemoteBot: 'true',
-    TransferProtocol: window.location.protocol,
+    // RemoteBot: 'true',
+    // TransferProtocol: window.location.protocol,
     // 'https://host' => '//host': https://www.mediawiki.org/wiki/Manual:$wgServer
-    SiteHost: window.mw.config.get('wgServer').replace(/^[\w-]*?:(?=\/\/)/, ''),
+    // SiteHost: window.mw.config.get('wgServer').replace(/^[\w-]*?:(?=\/\/)/, ''),
     APIPath: window.mw.util.wikiScript('api'),
     Title: window.mw.config.get('wgPageName')
   };
